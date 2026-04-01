@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambar Agustina | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: #4a6cf7; }
+
+    header {
+      background: linear-gradient(135deg, #4a6cf7, #6a8dff);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+      animation: fadeInTop 1s ease forwards;
+    }
+    header h1 { font-family: 'Montserrat', sans-serif; font-size: 40px; margin-bottom: 10px; }
+    header p { font-size: 18px; }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      padding: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible { opacity:1; transform: translateY(0); }
+    section:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+    h2 {
+      color: #4a6cf7;
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
+    .contact a:hover { text-decoration: underline; }
+
+    footer { text-align:center; padding:20px; font-size:14px; background:#eee; margin-top:20px; border-radius: 0 0 15px 15px; }
+
+    /* QA Tools Icons */
+    .tools { display:flex; flex-wrap:wrap; gap:15px; margin-top:10px; }
+    .tools i { font-size:28px; color:#4a6cf7; transition: transform 0.3s; }
+    .tools i:hover { transform: scale(1.2); color:#6a8dff; }
+
+    /* Skills Progress */
+    .skill { margin-bottom:15px; }
+    .skill-name { margin-bottom:5px; font-weight:bold; }
+    .skill-bar { background:#ddd; border-radius:10px; height:12px; overflow:hidden; }
+    .skill-fill { height:12px; border-radius:10px; background:#4a6cf7; width:0; transition: width 1s ease-in-out; }
+
+    /* Responsive */
+    @media (min-width: 600px) { .container { grid-template-columns:1fr 1fr; } header h1 { font-size:44px; } }
+    @media (min-width: 900px) { .container { grid-template-columns:2fr 1fr; } header { padding:80px 20px; } header h1 { font-size:48px; } }
+
+    @keyframes fadeInTop { 0%{opacity:0;transform:translateY(-30px);}100%{opacity:1;transform:translateY(0);} }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ambar Agustina</h1>
+  <p>Software Quality Assurance | Banking Applications</p>
+</header>
+
+<div class="container">
+  <section class="animate">
+    <h2>Profile</h2>
+    <p>I am a Software Quality Assurance professional specializing in banking applications, with over 10 years of experience. I have strong expertise in data management, communication, and time management. I am accustomed to working with deadlines and targets in dynamic and collaborative environments.</p>
+    <a href="#" download style="color:white;background:#4a6cf7;padding:10px 20px;border-radius:8px;display:inline-block;margin-top:10px;">Download CV</a>
+  </section>
+
+  <section class="animate contact">
+    <h2>Contact</h2>
+    <p>📞 089691477902</p>
+    <p>📱 <a href="https://instagram.com/ambar_chu" target="_blank">@ambar_chu</a></p>
+    <p>📧 ambar@example.com</p>
+  </section>
+
+  <section class="animate">
+    <h2>Work Experience</h2>
+    <p><strong>PT Sinergi Prakarsa Utama</strong> (2017 – Present)</p>
+    <ul>
+      <li>System & application testing</li>
+      <li>Bug identification & reporting</li>
+      <li>Collaboration with developers</li>
+      <li>Testing documentation</li>
+      <li>Ensured software quality standards</li>
+    </ul>
+  </section>
+
+  <section class="animate">
+    <h2>Projects</h2>
+    <ul>
+      <li>API Mobile Banking Izzyfin</li>
+      <li>API Fastpay</li>
+      <li>Core Banking System</li>
+      <li>Mobile Collection</li>
+      <li>Mobile Approval</li>
+    </ul>
+  </section>
+
+  <section class="animate">
+    <h2>Skills</h2>
+    <div class="skill">
+      <div class="skill-name">Manual Testing</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%;"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">API Testing</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%;"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Bug Reporting</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">System Analysis</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div>
+    </div>
+  </section>
+
+  <section class="animate">
+    <h2>QA Tools</h2>
+    <div class="tools">
+      <i class="fab fa-postman" title="Postman"></i>
+      <i class="fab fa-git-alt" title="Git"></i>
+      <i class="fab fa-jira" title="JIRA"></i>
+      <i class="fas fa-database" title="Database"></i>
+    </div>
+  </section>
+
+  <section class="animate">
+    <h2>Education</h2>
+    <p>Bachelor’s Degree in Information Systems<br>Budi Luhur University</p>
+  </section>
+</div>
+
+<footer>© 2026 Ambar Agustina</footer>
+
+<script>
+  // Scroll Animation
+  const sections = document.querySelectorAll('.animate');
+  const revealSection = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if(sectionTop < triggerBottom) section.classList.add('visible');
+    });
+  }
+  window.addEventListener('scroll', revealSection);
+  window.addEventListener('load', revealSection);
+</script>
+
+</body>
+</html>
